@@ -6,11 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
 
-  <App />,
+  // <App />, so that logs dont come 2 times
 );
 
 // If you want to start measuring performance in your app, pass a function
