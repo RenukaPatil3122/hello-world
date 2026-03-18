@@ -29,14 +29,19 @@ import Hero from "./components/Hero";
 import ErrorBoundry from "./components/ErrorBoundry";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import HoverCounterTwo from "./components/HoverCounterTwo";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <HoverCounter />
+        <HoverCounterTwo />
+        <ClickCounterTwo />
 
-        <ClickCounter name="Renuka" />
+        {/* <HoverCounter />
+
+        <ClickCounter name="Renuka" /> */}
 
         {/* <div>
           <ErrorBoundry>
