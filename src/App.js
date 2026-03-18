@@ -36,7 +36,7 @@ class App extends Component {
       <div className="App">
         <HoverCounter />
 
-        <ClickCounter />
+        <ClickCounter name="Renuka" />
 
         {/* <div>
           <ErrorBoundry>
