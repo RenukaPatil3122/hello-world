@@ -27,12 +27,18 @@ import FRParentInput from "./components/FRParentInput";
 import PortalDemo from "./components/PortalDemo";
 import Hero from "./components/Hero";
 import ErrorBoundry from "./components/ErrorBoundry";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div>
+        <HoverCounter />
+
+        <ClickCounter />
+
+        {/* <div>
           <ErrorBoundry>
             <Hero heroName="Batman"></Hero>
           </ErrorBoundry>
@@ -44,7 +50,7 @@ class App extends Component {
           <ErrorBoundry>
             <Hero heroName="Joker"></Hero>
           </ErrorBoundry>
-        </div>
+        </div> */}
 
         {/* <PortalDemo /> */}
 
