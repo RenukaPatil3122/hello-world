@@ -31,13 +31,28 @@ import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
 import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounterTwo from "./components/HoverCounterTwo";
+import User from "./components/User";
+import Counter1 from "./components/Counter1";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <Counter1
+          render={(count, incrementCount) => (
+            <ClickCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        />
+
+        <Counter1
+          render={(count, incrementCount) => (
+            <HoverCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        />
+
+        {/* <User render={(isLoggedIn) => (isLoggedIn ? "Renuka" : "Guest")} />
         <HoverCounterTwo />
-        <ClickCounterTwo />
+        <ClickCounterTwo /> */}
 
         {/* <HoverCounter />
 
